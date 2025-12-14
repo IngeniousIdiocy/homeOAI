@@ -164,10 +164,7 @@ If you’re publishing this repo for others:
 
 ---
 
-# Replacement `README.md` (copy/paste)
-
-```md
-# homeOAI
+# If you were to try and use this as a tool - you have a lot of work to do
 
 A **snapshot of `/home/oai`** from a tool-enabled ChatGPT-style runtime. This repo is mostly:
 
@@ -195,9 +192,8 @@ This repo encodes a pragmatic answer:
 > Don’t ship until the PNG review is clean.
 
 ---
-
 ## Repository layout
-
+```md
 .
 ├── redirect.html
 ├── share/
@@ -249,7 +245,7 @@ This repo encodes a pragmatic answer:
                 ├── set_number_formats.py
                 ├── set_text_alignment.py
                 └── set_wrap_text_styles.py
-
+```
 ---
 
 ## Core design ideas
