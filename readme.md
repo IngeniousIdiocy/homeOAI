@@ -198,38 +198,57 @@ This repo encodes a pragmatic answer:
 
 ## Repository layout
 
-```
-
 .
-├── readme.md                 # Original short README in the repo
-├── redirect.html             # Small helper HTML used in the original environment
-├── skills/
-│   ├── pdfs/
-│   │   └── skill.md          # PDF workflow + QA guidance
-│   ├── docs/
-│   │   ├── skill.md          # DOCX workflow + QA guidance
-│   │   └── render_docx.py    # DOCX → PDF → PNG renderer (headless LO + pdf2image)
-│   └── spreadsheets/
-│       ├── skill.md          # Spreadsheet workflow guidance
-│       ├── spreadsheet.md    # Additional spreadsheet notes
-│       └── examples/         # Spreadsheet examples
-└── share/
-└── slides/
-├── render_slides.py        # PPTX → PDF → PNG renderer
-├── slides_test.py          # Visual QA test: detect overflow outside slide canvas
-├── ensure_raster_image.py  # Convert “weird” formats to PNG for preview
-├── create_montage.py       # Build a montage image from many slide previews
-└── pptxgenjs_helpers/
-├── index.js            # Barrel export
-├── layout.js           # Overlap/geometry checks for slides
-├── layout_builders.js  # Reusable slide layout patterns
-├── image.js            # Image sizing/crop helpers
-├── latex.js            # LaTeX → SVG data URI (MathJax)
-├── code.js             # Code → syntax-highlighted text runs (PrismJS)
-├── svg.js              # SVG sanitization/data-uri helpers
-└── util.js             # Misc helpers (textbox sizing, shadows, etc.)
-
-````
+├── redirect.html
+├── share/
+│   └── slides/
+│       ├── create_montage.py
+│       ├── ensure_raster_image.py
+│       ├── render_slides.py
+│       ├── slides_test.py
+│       └── pptxgenjs_helpers/
+│           ├── code.js
+│           ├── image.js
+│           ├── index.js
+│           ├── latex.js
+│           ├── layout.js
+│           ├── layout_builders.js
+│           ├── svg.js
+│           └── util.js
+└── skills/
+    ├── docs/
+    │   ├── render_docx.py
+    │   └── skill.md
+    ├── pdfs/
+    │   └── skill.md
+    └── spreadsheets/
+        ├── artifact_tool_spreadsheet_formulas.md
+        ├── artifact_tool_spreadsheets_api.md
+        ├── skill.md
+        ├── spreadsheet.md
+        └── examples/
+            ├── create_basic_spreadsheet.py
+            ├── create_spreadsheet_with_styling.py
+            ├── read_existing_spreadsheet.py
+            ├── styling_spreadsheet.py
+            └── features/
+                ├── change_existing_charts.py
+                ├── cite_cells.py
+                ├── create_area_chart.py
+                ├── create_bar_chart.py
+                ├── create_doughnut_chart.py
+                ├── create_line_chart.py
+                ├── create_pie_chart.py
+                ├── create_tables.py
+                ├── set_cell_borders.py
+                ├── set_cell_fills.py
+                ├── set_cell_width_height.py
+                ├── set_conditional_formatting.py
+                ├── set_font_styles.py
+                ├── set_merge_cells.py
+                ├── set_number_formats.py
+                ├── set_text_alignment.py
+                └── set_wrap_text_styles.py
 
 ---
 
